@@ -99,7 +99,7 @@ export default function Contact() {
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6">
-              <h4 className="font-semibold mb-3">Why Choose codeORCA?</h4>
+              <h4 className="font-semibold mb-3">Why Choose code<span style={{color: "#1890ff"}}>ORCA</span></h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
