@@ -6,7 +6,7 @@ export default function Team() {
       name: "Alex Johnson",
       role: "Lead Developer",
       bio: "Fullstack developer dengan 8+ tahun pengalaman dalam React, Node.js, dan cloud architecture.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      image: "",
       social: {
         github: "#",
         linkedin: "#",
@@ -17,7 +17,7 @@ export default function Team() {
       name: "Sarah Chen",
       role: "UI/UX Designer",
       bio: "Designer kreatif yang berfokus pada user experience dan modern interface design.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b641?w=400&h=400&fit=crop&crop=face",
+      image: "",
       social: {
         github: "#",
         linkedin: "#", 
@@ -28,7 +28,7 @@ export default function Team() {
       name: "Mike Rodriguez",
       role: "Backend Specialist",
       bio: "Expert dalam database design, API development, dan system architecture.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      image: "",
       social: {
         github: "#",
         linkedin: "#",
@@ -39,7 +39,7 @@ export default function Team() {
       name: "Emily Watson",
       role: "Frontend Developer",
       bio: "Spesialis Web development dengan React, NextJS, dan TailwindCSS.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      image: "",
       social: {
         github: "#",
         linkedin: "#",

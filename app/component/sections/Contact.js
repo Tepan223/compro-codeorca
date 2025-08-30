@@ -69,7 +69,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Lets Start a Conversation</h3>
+              <h3 className="text-2xl font-semibold mb-6">{`Let's Start a Conversation`}</h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Kami akan dengan senang hati membantu Anda menemukan solusi teknologi yang tepat untuk bisnis Anda. 
                 Tim kami siap memberikan consultation gratis dan proposal yang detail.
