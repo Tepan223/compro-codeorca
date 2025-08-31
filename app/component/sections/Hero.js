@@ -24,11 +24,11 @@ export default function Hero() {
           </h1>
           
           <h2 className="text-2xl md:text-4xl font-semibold mb-6 text-foreground">
-            Modern Software Development
+            Professional Web Development
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Kami menciptakan solusi digital yang inovatif dan powerful untuk mengubah bisnis Anda ke era digital yang baru.
+            Kami menciptakan situs web yang menarik dan fungsional untuk membantu bisnis Anda berkembang secara online.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -54,7 +54,7 @@ export default function Hero() {
                 <Code className="text-primary" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Clean Code</h3>
-              <p className="text-muted-foreground">Kode yang bersih, maintainable, dan scalable untuk jangka panjang.</p>
+              <p className="text-muted-foreground">Kode yang bersih, mudah dibaca, dan mudah dipahami.</p>
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
@@ -62,7 +62,7 @@ export default function Hero() {
                 <Zap className="text-primary" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Fast Performance</h3>
-              <p className="text-muted-foreground">Optimasi performa maksimal untuk user experience yang superior.</p>
+              <p className="text-muted-foreground">Optimasi performa maksimal untuk user experience yang unggul.</p>
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">

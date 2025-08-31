@@ -19,10 +19,8 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:hello@codeorca.com", label: "Email" },
-    { icon: Phone, href: "tel:+6281234567890", label: "Phone" }
+    { icon: Mail, href: "mailto:businesscodeorca@gmail.com", label: "Email" },
+    { icon: Phone, href: "tel:+6285772320060", label: "Phone" }
   ];
 
   const scrollToSection = (href) => {

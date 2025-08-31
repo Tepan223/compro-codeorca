@@ -39,20 +39,20 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      details: "hello@codeorca.com",
-      link: "mailto:hello@codeorca.com"
+      details: "businesscodeorca@gmail.com",
+      link: "mailto:businesscodeorca@gmailcom"
     },
     {
       icon: Phone,
       title: "Phone",
-      details: "+62 812-3456-7890",
-      link: "tel:+6281234567890"
+      details: "+62 857-7232-0060",
+      link: "tel:+6285772320060"
     },
     {
       icon: MapPin,
       title: "Location",
-      details: "Jakarta, Indonesia",
-      link: "#"
+      details: "Ruko Crown Blok G-15. Green Lake City.",
+      link: "https://maps.app.goo.gl/sgzrxJoUXNq1wh3r8"
     }
   ];
 
@@ -103,7 +103,7 @@ export default function Contact() {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  Expert team dengan 5+ tahun pengalaman
+                  Expert team dengan 3+ tahun pengalaman
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>

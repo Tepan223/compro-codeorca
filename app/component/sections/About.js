@@ -8,7 +8,7 @@ export default function About() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">About code<span style={{color: "#1890ff"}}>ORCA</span></h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Kami adalah perusahaan teknologi yang berfokus pada pengembangan solusi software modern dan inovatif untuk membantu bisnis bertransformasi digital.
+            Kami adalah perusahaan teknologi yang berfokus pada pengembangan aplikasi web modern dan responsive menggunakan teknologi terdepan.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export default function About() {
             </div>
             <h3 className="text-2xl font-semibold mb-4">Visi Kami</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Menjadi perusahaan teknologi terdepan yang mengubah cara bisnis beroperasi melalui solusi digital yang inovatif, reliable, dan user-friendly. Kami berkomitmen untuk mewujudkan transformasi digital yang berkelanjutan bagi setiap klien.
+              Menjadi web development yang menciptakan solusi digital yang profesional dan inovatif untuk membantu bisnis klien mencapai kesuksesan jangka panjang.
             </p>
           </div>
 
@@ -29,7 +29,9 @@ export default function About() {
             </div>
             <h3 className="text-2xl font-semibold mb-4">Misi Kami</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Memberikan solusi software berkualitas tinggi yang membantu klien mencapai tujuan bisnis mereka. Kami menggunakan teknologi terdepan dan metodologi agile untuk memastikan setiap project memberikan value maksimal bagi bisnis klien.
+              1. Mengutamakan kualitas layanan dan website. <br />
+              2. Membangun hubungan mitra yang profesional dan terpercaya. <br />
+              3. Mengikuti perkembangan teknologi di bidang digital dan web development.
             </p>
           </div>
         </div>

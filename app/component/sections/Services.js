@@ -4,18 +4,18 @@ export default function Services() {
   const services = [
     {
       title: "Web Development",
-      description: "Pengembangan website modern dan responsif menggunakan teknologi terdepan",
+      description: "Membangun situs web yang menarik dan mudah digunakan",
       icon: "💻",
       color: "bg-blue-600",
     },
     {
       title: "E-Commerce Solutions",
-      description: "Platform e-commerce lengkap dengan payment gateway dan inventory management",
+      description: "Platform e-commerce lengkap dengan payment gateway",
       icon: "🛒",
       color: "bg-green-600",
     },
     {
-      title: "Performance Optimization",
+      title: "Maintenance and Optimization",
       description: "Optimasi performa aplikasi untuk pengalaman pengguna yang lebih baik",
       icon: "⚡",
       color: "bg-yellow-600",
@@ -34,7 +34,7 @@ export default function Services() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl text-center text-foreground mb-16">
             Layanan{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-clip-text text-transparent" style={{color: "#1890ff"}}>
               Kami
             </span>
           </h2>

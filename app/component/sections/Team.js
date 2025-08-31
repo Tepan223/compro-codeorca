@@ -3,47 +3,23 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export default function Team() {
   const teamMembers = [
     {
-      name: "Alex Johnson",
-      role: "Lead Developer",
-      bio: "Fullstack developer dengan 8+ tahun pengalaman dalam React, Node.js, dan cloud architecture.",
-      image: "",
-      social: {
-        github: "#",
-        linkedin: "#",
-        email: "alex@codeorca.com"
-      }
-    },
-    {
-      name: "Sarah Chen",
+      name: "Irene Djaya",
       role: "UI/UX Designer",
       bio: "Designer kreatif yang berfokus pada user experience dan modern interface design.",
       image: "",
       social: {
-        github: "#",
-        linkedin: "#", 
-        email: "sarah@codeorca.com"
+        github: "https://github.com/l13nnn",
+        email: "irenedjaya288@gmailcom",
       }
     },
     {
-      name: "Mike Rodriguez",
-      role: "Backend Specialist",
-      bio: "Expert dalam database design, API development, dan system architecture.",
+      name: "Stevanus Gabriel",
+      role: "Front-end Developer",
+      bio: "Expert dalam membuat antarmuka pengguna yang responsif dan interaktif.",
       image: "",
       social: {
         github: "#",
-        linkedin: "#",
         email: "mike@codeorca.com"
-      }
-    },
-    {
-      name: "Emily Watson",
-      role: "Frontend Developer",
-      bio: "Spesialis Web development dengan React, NextJS, dan TailwindCSS.",
-      image: "",
-      social: {
-        github: "#",
-        linkedin: "#",
-        email: "emily@codeorca.com"
       }
     }
   ];
@@ -58,7 +34,7 @@ export default function Team() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-card border border-border rounded-lg p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="relative mb-6">
@@ -80,13 +56,6 @@ export default function Team() {
                   aria-label="GitHub"
                 >
                   <Github size={20} />
-                </a>
-                <a 
-                  href={member.social.linkedin}
-                  className="text-muted-foreground hover:text-primary transition-colors duration-200"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin size={20} />
                 </a>
                 <a 
                   href={`mailto:${member.social.email}`}

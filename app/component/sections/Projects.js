@@ -50,7 +50,7 @@ export default function Projects() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Projects</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Showcase dari berbagai project yang telah kami kerjakan dengan teknologi modern dan standar industri terbaik.
+            Showcase dari berbagai project yang telah kami kerjakan dengan teknologi modern dan standar yang terbaik.
           </p>
         </div>
 

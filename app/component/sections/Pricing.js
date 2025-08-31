@@ -131,7 +131,7 @@ export default function Pricing() {
 
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-4">
-            Semua paket sudah termasuk consultation gratis dan project planning. Pembayaran bisa dicicil sesuai milestone project.
+            Semua paket sudah termasuk consultation gratis dan project planning. Pembayaran bisa dicicil sesuai pencapaian project.
           </p>
           <p className="text-sm text-muted-foreground">
             * Harga dapat berubah sewaktu-waktu tergantung kompleksitas project dan requirement khusus
