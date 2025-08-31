@@ -8,7 +8,7 @@ export default function About() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">About code<span style={{color: "#1890ff"}}>ORCA</span></h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Kami adalah perusahaan teknologi yang berfokus pada pengembangan aplikasi web modern dan responsive menggunakan teknologi terdepan.
+            Kami adalah perusahaan teknologi yang berfokus pada pengembangan aplikasi website modern dan responsive menggunakan teknologi terdepan.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export default function About() {
             </div>
             <h3 className="text-2xl font-semibold mb-4">Visi Kami</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Menjadi web development yang menciptakan solusi digital yang profesional dan inovatif untuk membantu bisnis klien mencapai kesuksesan jangka panjang.
+              Menjadi Web Development yang menciptakan solusi digital yang profesional dan inovatif untuk membantu bisnis klien mencapai kesuksesan jangka panjang.
             </p>
           </div>
 

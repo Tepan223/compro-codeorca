@@ -28,7 +28,7 @@ export default function Hero() {
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Kami menciptakan situs web yang menarik dan fungsional untuk membantu bisnis Anda berkembang secara online.
+            Kami menciptakan situs website yang menarik dan fungsional untuk membantu bisnis Anda berkembang secara online.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
