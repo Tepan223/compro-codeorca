@@ -6,7 +6,7 @@ export default function Team() {
       name: "Irene Djaya",
       role: "UI/UX Designer",
       bio: "Designer kreatif yang berfokus pada user experience dan modern interface design.",
-      image: "",
+      image: "Irene.jpg",
       social: {
         github: "https://github.com/l13nnn",
         email: "irenedjaya288@gmailcom",
@@ -16,7 +16,7 @@ export default function Team() {
       name: "Stevanus Gabriel",
       role: "Front-end Developer",
       bio: "Expert dalam membuat antarmuka pengguna yang responsif dan interaktif.",
-      image: "",
+      image: "TepanG.jpg",
       social: {
         github: "#",
         email: "mike@codeorca.com"
