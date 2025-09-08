@@ -14,7 +14,7 @@ export default function Footer() {
   const services = [
     { name: "Web Development", href: "#services" },
     { name: "E-Commerce Solutions", href: "#services" },
-    { name: "Performance Optimization", href: "#services" },
+    { name: "Maintenance and Optimization", href: "#services" },
     { name: "UI/UX Design", href: "#services" },
   ];
 

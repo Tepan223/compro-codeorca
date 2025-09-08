@@ -3,55 +3,44 @@ import { Check, Star } from "lucide-react";
 export default function Pricing() {
   const pricingPlans = [
     {
-      name: "Starter",
-      price: "15,000,000",
+      name: "Custom Web Application",
+      price: "3,500,000",
       period: "project",
-      description: "Perfect untuk startup dan small business yang ingin memulai transformasi digital.",
+      description: "Aplikasi web custom untuk memenuhi kebutuhan bisnis dengan fitur yang dapat disesuaikan.",
       features: [
-        "Website Responsive (up to 5 pages)",
-        "Basic SEO Optimization",
-        "Contact Form Integration", 
-        "Social Media Integration",
-        "3 Months Free Maintenance",
-        "Basic Analytics Setup"
+        "Desain UI/UX",
+        "Pengembangan Fitur Khusus",
+        "Integrasi Payment Gateway", 
+        "Hosting 1 Tahun",
+        "Pengujian dan Revisi",
+        "Support Teknis Selama 1 Bulan"
       ],
       popular: false
     },
     {
-      name: "Professional",
-      price: "35,000,000",
+      name: "Company Profile",
+      price: "2,000,000",
       period: "project",
-      description: "Ideal untuk medium business yang membutuhkan solusi lebih komprehensif.",
+      description: "Website E-Commerce untuk mempermudah penjualan online dengan tampilan profesional.",
       features: [
-        "Custom Web Application",
-        "User Authentication System",
-        "Admin Dashboard",
-        "Database Integration",
-        "API Development",
-        "Payment Gateway Integration",
-        "6 Months Free Maintenance",
-        "Advanced Analytics",
-        "Mobile Responsive Design"
+        "Desain UI/UX",
+        "Konten dan Fitur Halaman",
+        "Hosting 1 Tahun",
+        "Pengujian dan Revisi",
       ],
       popular: true
     },
     {
-      name: "Enterprise",
-      price: "Custom",
-      period: "quote",
+      name: "E-Commerce",
+      price: "2,850,000",
+      period: "project",
       description: "Solusi enterprise grade untuk large corporation dengan requirement khusus.",
       features: [
-        "Full Stack Development",
-        "Microservices Architecture",
-        "Cloud Infrastructure Setup",
-        "DevOps Implementation",
-        "Security Audit & Implementation",
-        "Load Balancing & Scaling",
-        "12 Months Free Maintenance",
-        "Dedicated Project Manager",
-        "24/7 Priority Support",
-        "Custom Integration",
-        "Training & Documentation"
+        "Desain UI/UX",
+        "Fitur Utama",
+        "Optimasi SEO Dasar",
+        "Hosting 1 Tahun",
+        "Pengujian dan Revisi",
       ],
       popular: false
     }

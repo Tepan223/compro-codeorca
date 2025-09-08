@@ -18,8 +18,8 @@ export default function Team() {
       bio: "Expert dalam membuat antarmuka pengguna yang responsif dan interaktif.",
       image: "TepanG.jpg",
       social: {
-        github: "#",
-        email: "mike@codeorca.com"
+        github: "https://github.com/Tepan223",
+        email: "tepan.gabriel@gmail.com"
       }
     }
   ];

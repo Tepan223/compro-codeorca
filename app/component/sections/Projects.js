@@ -3,42 +3,34 @@ import { ExternalLink, Github } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Platform e-commerce lengkap dengan payment gateway, inventory management, dan admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Movie Collection Web",
+      description: "Website interaktif untuk menampilkan koleksi film dengan animasi transisi yang halus menggunakan GSAP.",
+      image: "Movie Collection.jpg",
+      technologies: ["React", "gsap"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Real Estate Mobile App",
-      description: "Aplikasi mobile untuk pencarian dan listing properti dengan virtual tour dan chat features.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
-      technologies: ["React Native", "Firebase", "Google Maps", "WebRTC"],
+      title: "Dessert Shop Website",
+      description: "Situs toko dessert dengan tampilan modern yang memudahkan pengguna untuk melihat menu dan detail produk.",
+      image: "Dessert.jpg",
+      technologies: ["React"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Financial Dashboard",
-      description: "Dashboard analytics untuk tracking financial data dengan real-time charts dan reporting.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      technologies: ["Vue.js", "D3.js", "Express", "MySQL"],
+      title: "Company Profile",
+      description: "Website profil perusahaan yang menampilkan informasi bisnis, layanan, dan kontak dengan desain profesional.",
+      image: "Company.jpg",
+      technologies: ["Next.js", "AntD"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Learning Management System",
-      description: "Platform pembelajaran online dengan video streaming, quiz system, dan progress tracking.",
-      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop",
-      technologies: ["Angular", "NestJS", "AWS", "Redis"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Restaurant POS System",
-      description: "Sistem point of sale untuk restaurant dengan order management dan kitchen display system.",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop",
-      technologies: ["React", "Django", "PostgreSQL", "WebSocket"],
+      title: "Webflow",
+      description: "Website modern dengan desain responsif yang dibuat menggunakan React untuk menampilkan portofolio kreatif.",
+      image: "Webflow.jpg",
+      technologies: ["React"],
       liveUrl: "#",
       githubUrl: "#"
     }
