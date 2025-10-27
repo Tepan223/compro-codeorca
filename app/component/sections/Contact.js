@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import emailjs from "emailjs-com";
+import { toast } from "react-hot-toast"; 
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -13,7 +15,7 @@ export default function Contact() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [name]: value
     }));
@@ -23,16 +25,34 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    setTimeout(() => {
+    try {
+      // Kirim email lewat EmailJS
+      await emailjs.send(
+        "service_adc8fbk",      // ganti dengan Service ID dari EmailJS
+        "template_bic3y8m",     // ganti dengan Template ID dari EmailJS
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          company: formData.company,
+          message: formData.message
+        },
+        "oYvF-vYMeI-h1kvZb"       // ganti dengan Public Key dari EmailJS
+      );
+
       toast.success("Message sent successfully! We'll get back to you soon.");
+
       setFormData({
         name: "",
         email: "",
         company: "",
         message: ""
       });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error("Failed to send message. Please try again later.");
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const contactInfo = [
@@ -40,7 +60,7 @@ export default function Contact() {
       icon: Mail,
       title: "Email",
       details: "businesscodeorca@gmail.com",
-      link: "mailto:businesscodeorca@gmailcom"
+      link: "mailto:businesscodeorca@gmail.com"
     },
     {
       icon: Phone,
@@ -99,7 +119,9 @@ export default function Contact() {
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6">
-              <h4 className="font-semibold mb-3">Why Choose code<span style={{color: "#1890ff"}}>ORCA</span></h4>
+              <h4 className="font-semibold mb-3">
+                Why Choose code<span style={{ color: "#1890ff" }}>ORCA</span>
+              </h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>

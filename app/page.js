@@ -10,6 +10,7 @@ import Projects from "./component/sections/Projects";
 import Pricing from "./component/sections/Pricing";
 import Contact from "./component/sections/Contact";
 import Footer from "./component/Footer";
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 export default function Home() {
@@ -38,6 +39,7 @@ export default function Home() {
             <Projects />
             <Pricing />
             <Contact />
+            <Toaster position="top-right" />
           </main>
           <Footer />
         </>
