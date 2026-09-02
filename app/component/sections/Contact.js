@@ -30,7 +30,7 @@ export default function Contact() {
 
     try {
       const response = await emailjs.send(
-        "service_adc8fbk",
+        "service_yku75gt",
         "template_bic3y8m",
         {
           from_name: formData.name,
