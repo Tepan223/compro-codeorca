@@ -1,23 +1,26 @@
+"use client";
+
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import emailjs from "emailjs-com";
-import { toast } from "react-hot-toast"; 
+import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
-    message: ""
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+
     setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -26,30 +29,38 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      // Kirim email lewat EmailJS
-      await emailjs.send(
-        "service_adc8fbk",      // ganti dengan Service ID dari EmailJS
-        "template_bic3y8m",     // ganti dengan Template ID dari EmailJS
+      const response = await emailjs.send(
+        "service_adc8fbk",
+        "template_bic3y8m",
         {
           from_name: formData.name,
           from_email: formData.email,
           company: formData.company,
-          message: formData.message
+          message: formData.message,
         },
-        "oYvF-vYMeI-h1kvZb"       // ganti dengan Public Key dari EmailJS
+        "oYvF-vYMeI-h1kvZb"
       );
 
-      toast.success("Message sent successfully! We'll get back to you soon.");
+      console.log("EmailJS Success:", response);
+
+      toast.success(
+        "Message sent successfully! We'll get back to you soon."
+      );
 
       setFormData({
         name: "",
         email: "",
         company: "",
-        message: ""
+        message: "",
       });
     } catch (error) {
       console.error("EmailJS Error:", error);
-      toast.error("Failed to send message. Please try again later.");
+      console.error("EmailJS Status:", error?.status);
+      console.error("EmailJS Text:", error?.text);
+
+      toast.error(
+        "Failed to send message. Please try again later."
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -60,54 +71,86 @@ export default function Contact() {
       icon: Mail,
       title: "Email",
       details: "businesscodeorca@gmail.com",
-      link: "mailto:businesscodeorca@gmail.com"
+      link: "mailto:businesscodeorca@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
       details: "+62 857-7232-0060",
-      link: "tel:+6285772320060"
+      link: "tel:+6285772320060",
     },
     {
       icon: MapPin,
       title: "Location",
       details: "Ruko Crown Blok G-15. Green Lake City.",
-      link: "https://maps.app.goo.gl/sgzrxJoUXNq1wh3r8"
-    }
+      link: "https://maps.app.goo.gl/sgzrxJoUXNq1wh3r8",
+    },
   ];
 
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
+
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Get In Touch
+          </h2>
+
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Siap untuk memulai project Anda? Mari diskusikan bagaimana kami bisa membantu mewujudkan visi digital bisnis Anda.
+            Siap untuk memulai project Anda? Mari diskusikan bagaimana
+            kami bisa membantu mewujudkan visi digital bisnis Anda.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
           <div className="space-y-8">
+
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Let&apos;s Start a Conversation</h3>
+              <h3 className="text-2xl font-semibold mb-6">
+                Let's Start a Conversation
+              </h3>
+
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Kami akan dengan senang hati membantu Anda menemukan solusi teknologi yang tepat untuk bisnis Anda. 
-                Tim kami siap memberikan consultation gratis dan proposal yang detail.
+                Kami akan dengan senang hati membantu Anda menemukan solusi
+                teknologi yang tepat untuk bisnis Anda. Tim kami siap
+                memberikan consultation gratis dan proposal yang detail.
               </p>
             </div>
 
             <div className="space-y-6">
               {contactInfo.map((info, index) => {
                 const Icon = info.icon;
+
                 return (
-                  <div key={index} className="flex items-center gap-4">
+                  <div
+                    key={index}
+                    className="flex items-center gap-4"
+                  >
                     <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center">
-                      <Icon className="text-primary" size={24} />
+                      <Icon
+                        className="text-primary"
+                        size={24}
+                      />
                     </div>
+
                     <div>
-                      <h4 className="font-medium mb-1">{info.title}</h4>
+                      <h4 className="font-medium mb-1">
+                        {info.title}
+                      </h4>
+
                       <a
                         href={info.link}
+                        target={
+                          info.title === "Location"
+                            ? "_blank"
+                            : undefined
+                        }
+                        rel={
+                          info.title === "Location"
+                            ? "noopener noreferrer"
+                            : undefined
+                        }
                         className="text-muted-foreground hover:text-primary transition-colors duration-200"
                       >
                         {info.details}
@@ -118,38 +161,60 @@ export default function Contact() {
               })}
             </div>
 
+            {/* Why Choose Us */}
             <div className="bg-card border border-border rounded-lg p-6">
               <h4 className="font-semibold mb-3">
-                Why Choose code<span style={{ color: "#1890ff" }}>ORCA</span>
+                Why Choose{" "}
+                <span style={{ color: "#1890ff" }}>
+                  codeORCA
+                </span>
               </h4>
+
               <ul className="space-y-2 text-muted-foreground">
+
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <div className="w-2 h-2 bg-primary rounded-full" />
                   Expert team dengan 3+ tahun pengalaman
                 </li>
+
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <div className="w-2 h-2 bg-primary rounded-full" />
                   Menggunakan teknologi terdepan dan best practices
                 </li>
+
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <div className="w-2 h-2 bg-primary rounded-full" />
                   Support dan maintenance jangka panjang
                 </li>
+
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <div className="w-2 h-2 bg-primary rounded-full" />
                   Transparent pricing dan clear project timeline
                 </li>
+
               </ul>
             </div>
           </div>
 
+          {/* Contact Form */}
           <div className="bg-card border border-border rounded-lg p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
+
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+
+              {/* Name & Email */}
               <div className="grid md:grid-cols-2 gap-4">
+
                 <div>
-                  <label htmlFor="name" className="block mb-2 font-medium">
+                  <label
+                    htmlFor="name"
+                    className="block mb-2 font-medium"
+                  >
                     Full Name *
                   </label>
+
                   <input
                     type="text"
                     id="name"
@@ -161,10 +226,15 @@ export default function Contact() {
                     placeholder="Enter your full name"
                   />
                 </div>
+
                 <div>
-                  <label htmlFor="email" className="block mb-2 font-medium">
+                  <label
+                    htmlFor="email"
+                    className="block mb-2 font-medium"
+                  >
                     Email Address *
                   </label>
+
                   <input
                     type="email"
                     id="email"
@@ -176,12 +246,18 @@ export default function Contact() {
                     placeholder="Enter your email"
                   />
                 </div>
+
               </div>
 
+              {/* Company */}
               <div>
-                <label htmlFor="company" className="block mb-2 font-medium">
+                <label
+                  htmlFor="company"
+                  className="block mb-2 font-medium"
+                >
                   Company (Optional)
                 </label>
+
                 <input
                   type="text"
                   id="company"
@@ -193,10 +269,15 @@ export default function Contact() {
                 />
               </div>
 
+              {/* Message */}
               <div>
-                <label htmlFor="message" className="block mb-2 font-medium">
+                <label
+                  htmlFor="message"
+                  className="block mb-2 font-medium"
+                >
                   Project Details *
                 </label>
+
                 <textarea
                   id="message"
                   name="message"
@@ -209,6 +290,7 @@ export default function Contact() {
                 />
               </div>
 
+              {/* Submit Button */}
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -216,7 +298,7 @@ export default function Contact() {
               >
                 {isSubmitting ? (
                   <>
-                    <div className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin"></div>
+                    <div className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
                     Sending...
                   </>
                 ) : (
@@ -226,6 +308,7 @@ export default function Contact() {
                   </>
                 )}
               </button>
+
             </form>
           </div>
         </div>
